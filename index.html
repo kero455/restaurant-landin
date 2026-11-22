@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'AURA | Modern Haute Cuisine & Michelin Fine Dining</title>
+  <meta name="description" content="Experience avant-garde fine dining at L'AURA. Michelin 3-star gastronomy by Executive Chef Jean-Pierre Dubois, bespoke wine pairings, and an enchanting dining atmosphere.">
+  <meta name="keywords" content="fine dining, luxury restaurant, Michelin star, gourmet food, tasting menu, steakhouse, caviar, wine pairing, upscale dining">
+  
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="L'AURA - Haute Gastronomy & Artisanal Mixology">
+  <meta property="og:description" content="Where Culinary Alchemy Meets Transcendent Elegance. Reserve your Michelin-caliber dining experience.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/hero_dish.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,900;1,400;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Ambient Glow Accents -->
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+  <div class="ambient-glow ambient-glow-3"></div>
+
+  <!-- Top Announcement Bar -->
+  <aside class="top-announcement" aria-label="Announcement">
+    <div class="container" style="display: flex; justify-content: center; align-items: center; gap: 14px;">
+      <span class="badge-pill">Michelin Guide 2026</span>
+      <span>Three Michelin Stars Awarded • Autumn Tasting Journey Reservations Now Open</span>
+      <span style="opacity: 0.5;">|</span>
+      <span>Complimentary Chauffeur Valet Available</span>
+    </div>
+  </aside>
+
+  <!-- Sticky Glassmorphic Navigation -->
+  <header>
+    <nav class="navbar" id="main-nav" aria-label="Main Navigation">
+      <div class="container nav-container">
+        <!-- Brand Logo -->
+        <a href="#hero" class="brand-logo" aria-label="L'AURA Home">
+          <div class="logo-crest">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <div>
+            <div class="logo-text">L'AURA<span>.</span></div>
+            <span class="logo-tag">Haute Cuisine • Paris & Beyond</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#philosophy">Our Craft</a></li>
+          <li><a href="#menu">Signature Menu</a></li>
+          <li><a href="#tasting">7-Course Journey</a></li>
+          <li><a href="#spaces">The Spaces</a></li>
+          <li><a href="#chef">Chef Dubois</a></li>
+          <li><a href="#testimonials">Acclaim</a></li>
+          <li><a href="#reservation">Reservations</a></li>
+        </ul>
+
+        <!-- Nav Right Controls -->
+        <div class="nav-actions">
+          <!-- Audio Ambiance Toggle -->
+          <button class="tasting-tray-btn" id="ambiance-audio-toggle" title="Play Lounge Ambiance" aria-label="Toggle Lounge Audio">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 18V5l12-2v13"/>
+              <circle cx="6" cy="18" r="3"/>
+              <circle cx="18" cy="16" r="3"/>
+            </svg>
+          </button>
+
+          <!-- Tasting Tray / Cart Button -->
+          <button class="tasting-tray-btn" id="open-tray-btn" title="View Tasting Tray" aria-label="View Selected Tasting Tray">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/>
+            </svg>
+            <span class="tray-badge" id="tray-badge-count">0</span>
+          </button>
+
+          <!-- Primary Reservation CTA -->
+          <a href="#reservation" class="btn btn-gold btn-sm" id="nav-reserve-btn">
+            Reserve Table
+          </a>
+
+          <!-- Mobile Hamburger -->
+          <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="michelin-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+            <span>Michelin Three Stars &bull; 2026 Honor</span>
+          </div>
+
+          <h1 class="hero-title">
+            Where Culinary Alchemy Meets <em>Transcendent</em> Elegance
+          </h1>
+
+          <p class="hero-description">
+            Step into an evocative sensory theater where avant-garde technique honors earth's rarest harvests. Prepared by world-celebrated culinary visionary Jean-Pierre Dubois.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#reservation" class="btn btn-gold">
+              <span>Reserve Your Evening</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#menu" class="btn btn-glass">
+              <span>Explore The Menu</span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-num">3 ★</div>
+              <div class="stat-label">Michelin Stars</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">480+</div>
+              <div class="stat-label">Grand Cru Cellar</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">99.4%</div>
+              <div class="stat-label">VIP Diners Rating</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-wrapper">
+            <img src="assets/hero_dish.jpg" alt="Patagonian Sea Bass with Saffron Caviar Reduction" class="hero-img">
+
+            <!-- Floating Badges -->
+            <div class="floating-dish-card">
+              <div class="dish-tag">Chef's Signature Creation</div>
+              <div class="dish-name">Pan-Seared Chilean Sea Bass</div>
+              <div class="dish-price">$68 &bull; Imperial Caviar & 24K Gold</div>
+            </div>
+
+            <div class="floating-experience-pill">
+              <div class="pulse-dot"></div>
+              <span>Seating for Tonight: Very Limited</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PHILOSOPHY / THE CRAFT
+         ========================================================================== -->
+    <section class="philosophy" id="philosophy">
+      <div class="container">
+        <div class="section-header">
+          <span class="subtitle">Our Gastronomic Ethos</span>
+          <h2 class="section-title">The Triad of Culinary Perfection</h2>
+          <p class="section-desc">
+            We believe dining is an emotional journey. Every plate at L'AURA tells a story of uncompromised terroir, artistic innovation, and seamless hospitality.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3 class="pillar-title">Terroir & Pristine Origin</h3>
+            <p class="pillar-text">
+              100% hyper-seasonal harvests, wild-foraged botanicals, and sustainably line-caught deep sea treasures flown in daily under direct artisan partnerships.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+              </svg>
+            </div>
+            <h3 class="pillar-title">Avant-Garde Fire & Alchemy</h3>
+            <p class="pillar-text">
+              Merging century-old French classical foundations with modern molecular precision—charcoal ember smoking, cryogenic textures, and aromatic reductions.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M8 22h8M12 11v11M19 3l-7 8-7-8h14z"/>
+              </svg>
+            </div>
+            <h3 class="pillar-title">Grand Cru Sommelier Vault</h3>
+            <p class="pillar-text">
+              Over 480 rare vintages curated from private Bordeaux cellars, Burgundy domains, and biodynamic natural vineries to heighten each plate's subtleties.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         INTERACTIVE SIGNATURE MENU
+         ========================================================================== -->
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <div class="section-header">
+          <span class="subtitle">Artisan Creations</span>
+          <h2 class="section-title">The À La Carte Masterpieces</h2>
+          <p class="section-desc">
+            Explore our curated culinary creations. Add your favorites directly to your personal Tasting Tray to plan your evening.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="menu-tabs">
+          <button class="tab-btn active" data-category="all">All Offerings</button>
+          <button class="tab-btn" data-category="starters">Starters & Caviar</button>
+          <button class="tab-btn" data-category="mains">Main Creations</button>
+          <button class="tab-btn" data-category="cocktails">Artisanal Cocktails</button>
+          <button class="tab-btn" data-category="desserts">Grand Desserts</button>
+        </div>
+
+        <!-- Dynamic Menu Grid -->
+        <div class="menu-grid" id="menu-items-grid">
+          <!-- Populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7-COURSE CHEF'S TASTING JOURNEY
+         ========================================================================== -->
+    <section class="tasting-journey" id="tasting">
+      <div class="container">
+        <div class="tasting-box">
+          <div class="tasting-header">
+            <span class="subtitle">An Epicurean Odyssey</span>
+            <h2 class="section-title" style="margin-top: 14px;">The 7-Course Chef's Tasting Symphony</h2>
+            <p style="color: var(--text-secondary); font-size: 1rem;">
+              A multi-sensory progression designed by Executive Chef Jean-Pierre Dubois. An intimate exploration of textures, aromas, and harmonized terroir.
+            </p>
+          </div>
+
+          <div class="courses-timeline">
+            <div class="course-item">
+              <div class="course-step">Course I &bull; Prelude</div>
+              <h3 class="course-title">Oyster Emulsion & Champagne</h3>
+              <p class="course-pair">Pairing: <span>Krug Grande Cuvée 170th</span></p>
+            </div>
+
+            <div class="course-item">
+              <div class="course-step">Course II &bull; Ocean</div>
+              <h3 class="course-title">Chilean Sea Bass & Caviar</h3>
+              <p class="course-pair">Pairing: <span>Dom Pérignon 2013</span></p>
+            </div>
+
+            <div class="course-item">
+              <div class="course-step">Course III &bull; Earth</div>
+              <h3 class="course-title">Black Truffle Agnolotti</h3>
+              <p class="course-pair">Pairing: <span>Meursault 1er Cru 2020</span></p>
+            </div>
+
+            <div class="course-item">
+              <div class="course-step">Course IV &bull; The Fire</div>
+              <h3 class="course-title">A5 Miyazaki Wagyu Medallion</h3>
+              <p class="course-pair">Pairing: <span>Château Margaux 2015</span></p>
+            </div>
+
+            <div class="course-item">
+              <div class="course-step">Course V &bull; Palate Refresher</div>
+              <h3 class="course-title">Yuzu Hibiscus Granita</h3>
+              <p class="course-pair">Infusion: <span>Bergamot Botanical Spritz</span></p>
+            </div>
+
+            <div class="course-item">
+              <div class="course-step">Course VI &bull; Sweet Finale</div>
+              <h3 class="course-title">Valrhona Grand Cru Sphere</h3>
+              <p class="course-pair">Pairing: <span>Château d'Yquem 2011</span></p>
+            </div>
+
+            <div class="course-item">
+              <div class="course-step">Course VII &bull; Farewell</div>
+              <h3 class="course-title">Smoked Mignardises & Digestif</h3>
+              <p class="course-pair">Spirit: <span>Rare Hennessy Paradis</span></p>
+            </div>
+          </div>
+
+          <div class="tasting-footer-bar">
+            <div class="tasting-price-tag">
+              <span class="amount">$245</span>
+              <span class="label">per guest &bull; Optional Grand Cru Pairing +$140</span>
+            </div>
+            <a href="#reservation" class="btn btn-gold">
+              Reserve Tasting Journey
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ATMOSPHERE & DINING SPACES
+         ========================================================================== -->
+    <section class="atmosphere-section" id="spaces">
+      <div class="container">
+        <div class="section-header">
+          <span class="subtitle">The Venue</span>
+          <h2 class="section-title">Enchanting Ambiance</h2>
+          <p class="section-desc">
+            Designed by award-winning architectural masters, combining velvet privacy booths, vintage brass chandeliers, and an acoustic soundscape tuned for intimate conversation.
+          </p>
+        </div>
+
+        <div class="spaces-grid">
+          <!-- Main Space -->
+          <div class="space-main-card">
+            <img src="assets/interior.jpg" alt="L'AURA Grand Crystal Dining Hall" loading="lazy">
+            <div class="space-card-overlay">
+              <span class="subtitle" style="margin-bottom: 8px;">Signature Hall</span>
+              <h3>The Grand Crystal Dining Room</h3>
+              <p>
+                Centerpiece multi-tiered crystal chandeliers, plush burgundy velvet booths, and hand-polished marble tabletops creating an unforgettable romantic atmosphere.
+              </p>
+            </div>
+          </div>
+
+          <!-- Secondary Spaces Column -->
+          <div class="spaces-side-column">
+            <div class="space-sub-card">
+              <img src="assets/cocktail.jpg" alt="Artisan Mixology Lounge & Bar" loading="lazy">
+              <div class="space-sub-overlay">
+                <h4>The Obsidian Cocktail Bar</h4>
+                <p>Smoked libations, rare spirits, and bespoke mixology crafted tableside.</p>
+              </div>
+            </div>
+
+            <div class="space-sub-card">
+              <img src="assets/wagyu_steak.jpg" alt="The Sommelier's Private Cellar Table" loading="lazy">
+              <div class="space-sub-overlay">
+                <h4>The Sommelier's Secret Cellar</h4>
+                <p>Private VIP dining enveloped by over 1,200 historic vintage bottles.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CHEF SPOTLIGHT
+         ========================================================================== -->
+    <section class="chef-section" id="chef">
+      <div class="container">
+        <div class="chef-grid">
+          <div class="chef-image-box">
+            <img src="assets/chef.jpg" alt="Executive Chef Jean-Pierre Dubois" class="chef-img" loading="lazy">
+            <div class="chef-badge-overlay">
+              <h4>Jean-Pierre Dubois</h4>
+              <p>Executive Chef & Co-Founder &bull; Chevalier de l'Ordre Culinaire</p>
+            </div>
+          </div>
+
+          <div class="chef-info-content">
+            <span class="subtitle">Culinary Mastermind</span>
+            <h2>"Every Plate is a Canvas Where Nature Speaks Without Words"</h2>
+            
+            <p class="chef-quote">
+              "We do not merely assemble ingredients; we unlock memory, emotional resonance, and the wild soul of the seasons."
+            </p>
+
+            <p class="chef-bio">
+              Trained across three continents under the world's most revered master chefs, Jean-Pierre has guided L'AURA to its current status as an international benchmark of haute gastronomy. His cuisine marries Japanese discipline in purity of flavor with classical French grandeur in reduction and technique.
+            </p>
+
+            <div class="chef-accolades">
+              <div class="accolade-item">
+                <div class="accolade-icon">★</div>
+                <div class="accolade-text">
+                  <h5>3 Michelin Stars</h5>
+                  <p>Awarded consecutively 2024-2026</p>
+                </div>
+              </div>
+
+              <div class="accolade-item">
+                <div class="accolade-icon">🏆</div>
+                <div class="accolade-text">
+                  <h5>Bocuse d'Or Laureate</h5>
+                  <p>International Gastronomic Honor</p>
+                </div>
+              </div>
+
+              <div class="accolade-item">
+                <div class="accolade-icon">🌿</div>
+                <div class="accolade-text">
+                  <h5>Michelin Green Star</h5>
+                  <p>Zero Waste Sustainable Sourcing</p>
+                </div>
+              </div>
+
+              <div class="accolade-item">
+                <div class="accolade-icon">🍷</div>
+                <div class="accolade-text">
+                  <h5>Grand Award of Excellence</h5>
+                  <p>Wine Spectator Top Cellar</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="#reservation" class="btn btn-outline-gold">
+              Reserve Chef's Counter Seating
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ONLINE TABLE RESERVATION SYSTEM
+         ========================================================================== -->
+    <section class="reservation-section" id="reservation">
+      <div class="container">
+        <div class="section-header">
+          <span class="subtitle">Book Your Experience</span>
+          <h2 class="section-title">Reserve Your Table</h2>
+          <p class="section-desc">
+            Reservations are released 30 days in advance. For parties of 8 or more, please contact our concierge directly.
+          </p>
+        </div>
+
+        <div class="reservation-wrapper">
+          <!-- Reservation Form -->
+          <div class="res-form-col">
+            <h3>Table Particulars</h3>
+            <p>Select your date, preferred seating atmosphere, and time slot.</p>
+
+            <form id="reservation-form">
+              <div class="form-grid-2">
+                <div class="form-group">
+                  <label for="res-date">Select Date</label>
+                  <input type="date" id="res-date" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="res-guests">Number of Guests</label>
+                  <select id="res-guests" class="form-control" required>
+                    <option value="1">1 Guest (Solo Gourmet)</option>
+                    <option value="2" selected>2 Guests (Intimate Table)</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests (Dining Booth)</option>
+                    <option value="5">5 Guests</option>
+                    <option value="6">6 Guests (Grand Table)</option>
+                    <option value="8">8 Guests (Private Salon)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Select Dining Time Slot</label>
+                <div class="time-slots-container">
+                  <button type="button" class="time-slot-btn" data-time="18:00">18:00 (Sunset)</button>
+                  <button type="button" class="time-slot-btn" data-time="19:00">19:00 (Prime)</button>
+                  <button type="button" class="time-slot-btn active" data-time="19:30">19:30 (Prime)</button>
+                  <button type="button" class="time-slot-btn" data-time="20:30">20:30 (Evening)</button>
+                  <button type="button" class="time-slot-btn" data-time="21:15">21:15 (Late)</button>
+                  <button type="button" class="time-slot-btn" data-time="22:00">22:00 (Nocturne)</button>
+                </div>
+              </div>
+
+              <div class="form-grid-2">
+                <div class="form-group">
+                  <label for="res-area">Preferred Seating Area</label>
+                  <select id="res-area" class="form-control">
+                    <option value="hall" selected>The Grand Crystal Hall</option>
+                    <option value="cellar">The Sommelier's Secret Cellar</option>
+                    <option value="counter">The Chef's Open Counter</option>
+                    <option value="terrace">The Starlight Terrace (Heated)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="res-occasion">Special Occasion</label>
+                  <select id="res-occasion" class="form-control">
+                    <option value="dining" selected>Gourmet Dinner</option>
+                    <option value="anniversary">Anniversary Celebration</option>
+                    <option value="birthday">Birthday Dinner</option>
+                    <option value="business">Executive Business Entertaining</option>
+                    <option value="proposal">Romantic Proposal</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-grid-2">
+                <div class="form-group">
+                  <label for="res-name">Full Name</label>
+                  <input type="text" id="res-name" class="form-control" placeholder="e.g. Lord Alexander Wright" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="res-email">Email Address</label>
+                  <input type="email" id="res-email" class="form-control" placeholder="alexander@domain.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="res-phone">Telephone Contact (For SMS Confirmation)</label>
+                <input type="tel" id="res-phone" class="form-control" placeholder="+1 (555) 349-8201" required>
+              </div>
+
+              <div class="form-group">
+                <label for="res-requests">Dietary Preferences & Special Requests (Optional)</label>
+                <textarea id="res-requests" class="form-control" rows="3" placeholder="Mention allergies, dietary restrictions, or champagne chilling upon arrival..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gold" style="width: 100%; margin-top: 10px; font-size: 1.05rem;">
+                Confirm & Secure Table
+              </button>
+            </form>
+          </div>
+
+          <!-- Dynamic Live Summary Card -->
+          <div class="res-summary-col">
+            <div>
+              <h4>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Booking Overview
+              </h4>
+
+              <div class="summary-rows">
+                <div class="summary-row">
+                  <span class="label">Date:</span>
+                  <span class="value" id="sum-date">Today</span>
+                </div>
+                <div class="summary-row">
+                  <span class="label">Time:</span>
+                  <span class="value" id="sum-time">19:30</span>
+                </div>
+                <div class="summary-row">
+                  <span class="label">Party Size:</span>
+                  <span class="value" id="sum-guests">2 Guests</span>
+                </div>
+                <div class="summary-row">
+                  <span class="label">Seating:</span>
+                  <span class="value" id="sum-area">The Grand Crystal Hall</span>
+                </div>
+                <div class="summary-row">
+                  <span class="label">Deposit Policy:</span>
+                  <span class="value" style="color: var(--success);">Complimentary Hold</span>
+                </div>
+                <div class="summary-row">
+                  <span class="label">Valet Service:</span>
+                  <span class="value" style="color: var(--gold-light);">Complimentary Included</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div style="background: rgba(212,175,55,0.06); border: 1px solid var(--border-gold); border-radius: 10px; padding: 14px; text-align: center;">
+                <span style="font-size: 0.8rem; color: var(--gold-light); font-weight: 600;">★ ZERO CANCELLATION FEE</span>
+                <p style="font-size: 0.76rem; color: var(--text-muted); margin-top: 4px;">Free modification up to 4 hours prior to seating.</p>
+              </div>
+              <p class="res-guarantee-note">
+                Need immediate concierge assistance? Call directly: <strong>+1 (800) 792-AURA</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TESTIMONIALS & CRITICAL ACCLAIM
+         ========================================================================== -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="subtitle">Critical Acclaim</span>
+          <h2 class="section-title">Words From The Connoisseurs</h2>
+          <p class="section-desc">
+            Honored by the global press and cherished by our distinguished guests.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testi-card">
+            <div>
+              <div class="stars-rating">★★★★★</div>
+              <p class="testi-quote">
+                "Dubois has transcended mere cooking. The Chilean sea bass and A5 Wagyu progression is undoubtedly the pinnacle of modern fine dining in this decade."
+              </p>
+            </div>
+            <div class="testi-author">
+              <div class="author-avatar">M</div>
+              <div class="author-info">
+                <h5>The Michelin Guide</h5>
+                <p>Three Stars Distinction &bull; Inspector Critique</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div>
+              <div class="stars-rating">★★★★★</div>
+              <p class="testi-quote">
+                "An intoxicating symphony of atmosphere and gastronomy. The attention to detail from the sommelier pairing to the warm Valrhona finish is hypnotic."
+              </p>
+            </div>
+            <div class="testi-author">
+              <div class="author-avatar">NY</div>
+              <div class="author-info">
+                <h5>The New York Times</h5>
+                <p>Critic's Four-Star Pick</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div>
+              <div class="stars-rating">★★★★★</div>
+              <p class="testi-quote">
+                "Celebrated our 10th anniversary at the Sommelier's Secret Cellar. From the moment the valet took our keys to the last sip of rare Hennessy, perfection."
+              </p>
+            </div>
+            <div class="testi-author">
+              <div class="author-avatar">CW</div>
+              <div class="author-info">
+                <h5>Lady Clara Wentworth</h5>
+                <p>Private Patron & Gourmet Enthusiast</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text" style="font-size: 1.8rem; font-family: var(--font-serif);">
+            L'AURA<span>.</span>
+          </div>
+          <p>
+            A cathedral of gastronomy where the finest gifts of ocean, forest, and vineyard unite under the master hand of Chef Jean-Pierre Dubois.
+          </p>
+          <div style="font-size: 0.85rem; color: var(--gold-light);">
+            📍 48 Avenue des Étoiles, Luxury Quarter &bull; Valet Portico
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Hours of Service</h4>
+          <ul class="footer-links">
+            <li><strong>Tuesday – Friday:</strong></li>
+            <li>Lunch: 12:00 – 15:00</li>
+            <li>Dinner: 18:00 – 23:30</li>
+            <li style="margin-top: 10px;"><strong>Saturday – Sunday:</strong></li>
+            <li>Gourmet Dinner: 17:30 – 00:30</li>
+            <li style="color: var(--text-muted); font-size: 0.8rem; margin-top: 6px;">Monday: Private Cellar Closed</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Exploration</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">The Atmosphere</a></li>
+            <li><a href="#menu">À La Carte Selection</a></li>
+            <li><a href="#tasting">7-Course Symphony</a></li>
+            <li><a href="#chef">Chef Jean-Pierre Dubois</a></li>
+            <li><a href="#reservation">Table Reservations</a></li>
+            <li><a href="#contact">Private Events & Galas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>VIP Cellar Gazette</h4>
+          <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 12px;">
+            Subscribe to receive private invitations to seasonal tasting previews, winemaker galas, and rare vintage releases.
+          </p>
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" id="newsletter-email" class="newsletter-input" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn-gold btn-sm" style="padding: 0 16px;">
+              Join
+            </button>
+          </form>
+          <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 10px;">
+            Dress Code: Smart Casual &bull; Jacket Preferred for Dinner
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 L'AURA Haute Cuisine & Lounge. All Rights Reserved.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#" style="color: var(--text-muted); text-decoration: none;">Privacy Charter</a>
+          <a href="#" style="color: var(--text-muted); text-decoration: none;">Terms of Reservation</a>
+          <a href="#" style="color: var(--text-muted); text-decoration: none;">Press Kit</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODALS & DRAWERS
+       ========================================================================== -->
+
+  <!-- Tasting Tray Slide-Out Drawer -->
+  <aside class="tray-drawer" id="tray-drawer" aria-label="Tasting Tray">
+    <div class="tray-header">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--gold-primary)" stroke-width="2">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/>
+        </svg>
+        <h4 style="font-family: var(--font-serif); font-size: 1.25rem;">Your Tasting Tray</h4>
+      </div>
+      <button class="modal-close-btn" id="close-tray-btn" style="position: static;" aria-label="Close Tray">✕</button>
+    </div>
+
+    <div class="tray-items-list" id="tray-items-list">
+      <!-- Populated dynamically by app.js -->
+    </div>
+
+    <div class="tray-footer">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <span style="color: var(--text-muted);">Estimated Selection:</span>
+        <span id="tray-total-amount" style="font-family: var(--font-serif); font-size: 1.4rem; color: var(--gold-primary); font-weight: 700;">$0</span>
+      </div>
+      <div style="display: flex; gap: 10px;">
+        <button class="btn btn-outline-gold btn-sm" id="clear-tray-btn" style="flex: 1;">
+          Clear
+        </button>
+        <button class="btn btn-gold btn-sm" id="tray-checkout-btn" style="flex: 2;">
+          Book With Selection
+        </button>
+      </div>
+    </div>
+  </aside>
+  <div class="modal-overlay" id="tray-overlay"></div>
+
+  <!-- Dish Details Modal -->
+  <div class="modal-overlay" id="dish-modal-overlay">
+    <div class="modal-content" style="max-width: 540px;">
+      <button class="modal-close-btn" id="close-dish-modal" aria-label="Close Dish Details">✕</button>
+      <div id="dish-modal-body">
+        <!-- Injected via app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Reservation Confirmation Modal -->
+  <div class="modal-overlay" id="res-modal-overlay">
+    <div class="modal-content" style="max-width: 520px;">
+      <button class="modal-close-btn" id="close-res-modal" aria-label="Close Confirmation">✕</button>
+      <div id="res-modal-body">
+        <!-- Injected via app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Anchor -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Core App Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
